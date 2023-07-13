@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'dns_record.dart';
 
@@ -11,46 +12,11 @@ part of 'dns_record.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 DnsRecord _$DnsRecordFromJson(Map<String, dynamic> json) {
   return _DnsRecord.fromJson(json);
 }
-
-/// @nodoc
-class _$DnsRecordTearOff {
-  const _$DnsRecordTearOff();
-
-  _DnsRecord call(
-      @JsonKey(name: 'Status') int status,
-      bool TC,
-      bool RD,
-      bool RA,
-      bool AD,
-      bool CD,
-      @JsonKey(name: 'edns_client_subnet') String? ednsClientSubnet,
-      @JsonKey(name: 'Answer') List<Answer>? answer,
-      @JsonKey(name: 'Comment') String? comment) {
-    return _DnsRecord(
-      status,
-      TC,
-      RD,
-      RA,
-      AD,
-      CD,
-      ednsClientSubnet,
-      answer,
-      comment,
-    );
-  }
-
-  DnsRecord fromJson(Map<String, Object?> json) {
-    return DnsRecord.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DnsRecord = _$DnsRecordTearOff();
 
 /// @nodoc
 mixin _$DnsRecord {
@@ -77,7 +43,8 @@ mixin _$DnsRecord {
 /// @nodoc
 abstract class $DnsRecordCopyWith<$Res> {
   factory $DnsRecordCopyWith(DnsRecord value, $Res Function(DnsRecord) then) =
-      _$DnsRecordCopyWithImpl<$Res>;
+      _$DnsRecordCopyWithImpl<$Res, DnsRecord>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'Status') int status,
       bool TC,
@@ -91,72 +58,76 @@ abstract class $DnsRecordCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DnsRecordCopyWithImpl<$Res> implements $DnsRecordCopyWith<$Res> {
+class _$DnsRecordCopyWithImpl<$Res, $Val extends DnsRecord>
+    implements $DnsRecordCopyWith<$Res> {
   _$DnsRecordCopyWithImpl(this._value, this._then);
 
-  final DnsRecord _value;
   // ignore: unused_field
-  final $Res Function(DnsRecord) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? TC = freezed,
-    Object? RD = freezed,
-    Object? RA = freezed,
-    Object? AD = freezed,
-    Object? CD = freezed,
+    Object? status = null,
+    Object? TC = null,
+    Object? RD = null,
+    Object? RA = null,
+    Object? AD = null,
+    Object? CD = null,
     Object? ednsClientSubnet = freezed,
     Object? answer = freezed,
     Object? comment = freezed,
   }) {
     return _then(_value.copyWith(
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as int,
-      TC: TC == freezed
+      TC: null == TC
           ? _value.TC
           : TC // ignore: cast_nullable_to_non_nullable
               as bool,
-      RD: RD == freezed
+      RD: null == RD
           ? _value.RD
           : RD // ignore: cast_nullable_to_non_nullable
               as bool,
-      RA: RA == freezed
+      RA: null == RA
           ? _value.RA
           : RA // ignore: cast_nullable_to_non_nullable
               as bool,
-      AD: AD == freezed
+      AD: null == AD
           ? _value.AD
           : AD // ignore: cast_nullable_to_non_nullable
               as bool,
-      CD: CD == freezed
+      CD: null == CD
           ? _value.CD
           : CD // ignore: cast_nullable_to_non_nullable
               as bool,
-      ednsClientSubnet: ednsClientSubnet == freezed
+      ednsClientSubnet: freezed == ednsClientSubnet
           ? _value.ednsClientSubnet
           : ednsClientSubnet // ignore: cast_nullable_to_non_nullable
               as String?,
-      answer: answer == freezed
+      answer: freezed == answer
           ? _value.answer
           : answer // ignore: cast_nullable_to_non_nullable
               as List<Answer>?,
-      comment: comment == freezed
+      comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DnsRecordCopyWith<$Res> implements $DnsRecordCopyWith<$Res> {
-  factory _$DnsRecordCopyWith(
-          _DnsRecord value, $Res Function(_DnsRecord) then) =
-      __$DnsRecordCopyWithImpl<$Res>;
+abstract class _$$_DnsRecordCopyWith<$Res> implements $DnsRecordCopyWith<$Res> {
+  factory _$$_DnsRecordCopyWith(
+          _$_DnsRecord value, $Res Function(_$_DnsRecord) then) =
+      __$$_DnsRecordCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'Status') int status,
       bool TC,
@@ -170,60 +141,60 @@ abstract class _$DnsRecordCopyWith<$Res> implements $DnsRecordCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$DnsRecordCopyWithImpl<$Res> extends _$DnsRecordCopyWithImpl<$Res>
-    implements _$DnsRecordCopyWith<$Res> {
-  __$DnsRecordCopyWithImpl(_DnsRecord _value, $Res Function(_DnsRecord) _then)
-      : super(_value, (v) => _then(v as _DnsRecord));
+class __$$_DnsRecordCopyWithImpl<$Res>
+    extends _$DnsRecordCopyWithImpl<$Res, _$_DnsRecord>
+    implements _$$_DnsRecordCopyWith<$Res> {
+  __$$_DnsRecordCopyWithImpl(
+      _$_DnsRecord _value, $Res Function(_$_DnsRecord) _then)
+      : super(_value, _then);
 
-  @override
-  _DnsRecord get _value => super._value as _DnsRecord;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? TC = freezed,
-    Object? RD = freezed,
-    Object? RA = freezed,
-    Object? AD = freezed,
-    Object? CD = freezed,
+    Object? status = null,
+    Object? TC = null,
+    Object? RD = null,
+    Object? RA = null,
+    Object? AD = null,
+    Object? CD = null,
     Object? ednsClientSubnet = freezed,
     Object? answer = freezed,
     Object? comment = freezed,
   }) {
-    return _then(_DnsRecord(
-      status == freezed
+    return _then(_$_DnsRecord(
+      null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as int,
-      TC == freezed
+      null == TC
           ? _value.TC
           : TC // ignore: cast_nullable_to_non_nullable
               as bool,
-      RD == freezed
+      null == RD
           ? _value.RD
           : RD // ignore: cast_nullable_to_non_nullable
               as bool,
-      RA == freezed
+      null == RA
           ? _value.RA
           : RA // ignore: cast_nullable_to_non_nullable
               as bool,
-      AD == freezed
+      null == AD
           ? _value.AD
           : AD // ignore: cast_nullable_to_non_nullable
               as bool,
-      CD == freezed
+      null == CD
           ? _value.CD
           : CD // ignore: cast_nullable_to_non_nullable
               as bool,
-      ednsClientSubnet == freezed
+      freezed == ednsClientSubnet
           ? _value.ednsClientSubnet
           : ednsClientSubnet // ignore: cast_nullable_to_non_nullable
               as String?,
-      answer == freezed
-          ? _value.answer
+      freezed == answer
+          ? _value._answer
           : answer // ignore: cast_nullable_to_non_nullable
               as List<Answer>?,
-      comment == freezed
+      freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -242,9 +213,10 @@ class _$_DnsRecord extends _DnsRecord {
       this.AD,
       this.CD,
       @JsonKey(name: 'edns_client_subnet') this.ednsClientSubnet,
-      @JsonKey(name: 'Answer') this.answer,
+      @JsonKey(name: 'Answer') final List<Answer>? answer,
       @JsonKey(name: 'Comment') this.comment)
-      : super._();
+      : _answer = answer,
+        super._();
 
   factory _$_DnsRecord.fromJson(Map<String, dynamic> json) =>
       _$$_DnsRecordFromJson(json);
@@ -265,9 +237,17 @@ class _$_DnsRecord extends _DnsRecord {
   @override
   @JsonKey(name: 'edns_client_subnet')
   final String? ednsClientSubnet;
+  final List<Answer>? _answer;
   @override
   @JsonKey(name: 'Answer')
-  final List<Answer>? answer;
+  List<Answer>? get answer {
+    final value = _answer;
+    if (value == null) return null;
+    if (_answer is EqualUnmodifiableListView) return _answer;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @JsonKey(name: 'Comment')
   final String? comment;
@@ -281,7 +261,7 @@ class _$_DnsRecord extends _DnsRecord {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DnsRecord &&
+            other is _$_DnsRecord &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.TC, TC) || other.TC == TC) &&
             (identical(other.RD, RD) || other.RD == RD) &&
@@ -290,36 +270,40 @@ class _$_DnsRecord extends _DnsRecord {
             (identical(other.CD, CD) || other.CD == CD) &&
             (identical(other.ednsClientSubnet, ednsClientSubnet) ||
                 other.ednsClientSubnet == ednsClientSubnet) &&
-            const DeepCollectionEquality().equals(other.answer, answer) &&
+            const DeepCollectionEquality().equals(other._answer, _answer) &&
             (identical(other.comment, comment) || other.comment == comment));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, status, TC, RD, RA, AD, CD,
-      ednsClientSubnet, const DeepCollectionEquality().hash(answer), comment);
+      ednsClientSubnet, const DeepCollectionEquality().hash(_answer), comment);
 
   @JsonKey(ignore: true)
   @override
-  _$DnsRecordCopyWith<_DnsRecord> get copyWith =>
-      __$DnsRecordCopyWithImpl<_DnsRecord>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_DnsRecordCopyWith<_$_DnsRecord> get copyWith =>
+      __$$_DnsRecordCopyWithImpl<_$_DnsRecord>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DnsRecordToJson(this);
+    return _$$_DnsRecordToJson(
+      this,
+    );
   }
 }
 
 abstract class _DnsRecord extends DnsRecord {
   const factory _DnsRecord(
-      @JsonKey(name: 'Status') int status,
-      bool TC,
-      bool RD,
-      bool RA,
-      bool AD,
-      bool CD,
-      @JsonKey(name: 'edns_client_subnet') String? ednsClientSubnet,
-      @JsonKey(name: 'Answer') List<Answer>? answer,
-      @JsonKey(name: 'Comment') String? comment) = _$_DnsRecord;
+      @JsonKey(name: 'Status') final int status,
+      final bool TC,
+      final bool RD,
+      final bool RA,
+      final bool AD,
+      final bool CD,
+      @JsonKey(name: 'edns_client_subnet') final String? ednsClientSubnet,
+      @JsonKey(name: 'Answer') final List<Answer>? answer,
+      @JsonKey(name: 'Comment') final String? comment) = _$_DnsRecord;
   const _DnsRecord._() : super._();
 
   factory _DnsRecord.fromJson(Map<String, dynamic> json) =
@@ -349,32 +333,13 @@ abstract class _DnsRecord extends DnsRecord {
   String? get comment;
   @override
   @JsonKey(ignore: true)
-  _$DnsRecordCopyWith<_DnsRecord> get copyWith =>
+  _$$_DnsRecordCopyWith<_$_DnsRecord> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 Question _$QuestionFromJson(Map<String, dynamic> json) {
   return _Question.fromJson(json);
 }
-
-/// @nodoc
-class _$QuestionTearOff {
-  const _$QuestionTearOff();
-
-  _Question call(String name, int type) {
-    return _Question(
-      name,
-      type,
-    );
-  }
-
-  Question fromJson(Map<String, Object?> json) {
-    return Question.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Question = _$QuestionTearOff();
 
 /// @nodoc
 mixin _$Question {
@@ -390,64 +355,70 @@ mixin _$Question {
 /// @nodoc
 abstract class $QuestionCopyWith<$Res> {
   factory $QuestionCopyWith(Question value, $Res Function(Question) then) =
-      _$QuestionCopyWithImpl<$Res>;
+      _$QuestionCopyWithImpl<$Res, Question>;
+  @useResult
   $Res call({String name, int type});
 }
 
 /// @nodoc
-class _$QuestionCopyWithImpl<$Res> implements $QuestionCopyWith<$Res> {
+class _$QuestionCopyWithImpl<$Res, $Val extends Question>
+    implements $QuestionCopyWith<$Res> {
   _$QuestionCopyWithImpl(this._value, this._then);
 
-  final Question _value;
   // ignore: unused_field
-  final $Res Function(Question) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? type = freezed,
+    Object? name = null,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$QuestionCopyWith<$Res> implements $QuestionCopyWith<$Res> {
-  factory _$QuestionCopyWith(_Question value, $Res Function(_Question) then) =
-      __$QuestionCopyWithImpl<$Res>;
+abstract class _$$_QuestionCopyWith<$Res> implements $QuestionCopyWith<$Res> {
+  factory _$$_QuestionCopyWith(
+          _$_Question value, $Res Function(_$_Question) then) =
+      __$$_QuestionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, int type});
 }
 
 /// @nodoc
-class __$QuestionCopyWithImpl<$Res> extends _$QuestionCopyWithImpl<$Res>
-    implements _$QuestionCopyWith<$Res> {
-  __$QuestionCopyWithImpl(_Question _value, $Res Function(_Question) _then)
-      : super(_value, (v) => _then(v as _Question));
+class __$$_QuestionCopyWithImpl<$Res>
+    extends _$QuestionCopyWithImpl<$Res, _$_Question>
+    implements _$$_QuestionCopyWith<$Res> {
+  __$$_QuestionCopyWithImpl(
+      _$_Question _value, $Res Function(_$_Question) _then)
+      : super(_value, _then);
 
-  @override
-  _Question get _value => super._value as _Question;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? type = freezed,
+    Object? name = null,
+    Object? type = null,
   }) {
-    return _then(_Question(
-      name == freezed
+    return _then(_$_Question(
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      type == freezed
+      null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
@@ -477,27 +448,31 @@ class _$_Question implements _Question {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Question &&
+            other is _$_Question &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.type, type) || other.type == type));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, type);
 
   @JsonKey(ignore: true)
   @override
-  _$QuestionCopyWith<_Question> get copyWith =>
-      __$QuestionCopyWithImpl<_Question>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_QuestionCopyWith<_$_Question> get copyWith =>
+      __$$_QuestionCopyWithImpl<_$_Question>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_QuestionToJson(this);
+    return _$$_QuestionToJson(
+      this,
+    );
   }
 }
 
 abstract class _Question implements Question {
-  const factory _Question(String name, int type) = _$_Question;
+  const factory _Question(final String name, final int type) = _$_Question;
 
   factory _Question.fromJson(Map<String, dynamic> json) = _$_Question.fromJson;
 
@@ -507,34 +482,13 @@ abstract class _Question implements Question {
   int get type;
   @override
   @JsonKey(ignore: true)
-  _$QuestionCopyWith<_Question> get copyWith =>
+  _$$_QuestionCopyWith<_$_Question> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 Answer _$AnswerFromJson(Map<String, dynamic> json) {
   return _Answer.fromJson(json);
 }
-
-/// @nodoc
-class _$AnswerTearOff {
-  const _$AnswerTearOff();
-
-  _Answer call(String name, int type, int TTL, String data) {
-    return _Answer(
-      name,
-      type,
-      TTL,
-      data,
-    );
-  }
-
-  Answer fromJson(Map<String, Object?> json) {
-    return Answer.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Answer = _$AnswerTearOff();
 
 /// @nodoc
 mixin _$Answer {
@@ -551,84 +505,88 @@ mixin _$Answer {
 /// @nodoc
 abstract class $AnswerCopyWith<$Res> {
   factory $AnswerCopyWith(Answer value, $Res Function(Answer) then) =
-      _$AnswerCopyWithImpl<$Res>;
+      _$AnswerCopyWithImpl<$Res, Answer>;
+  @useResult
   $Res call({String name, int type, int TTL, String data});
 }
 
 /// @nodoc
-class _$AnswerCopyWithImpl<$Res> implements $AnswerCopyWith<$Res> {
+class _$AnswerCopyWithImpl<$Res, $Val extends Answer>
+    implements $AnswerCopyWith<$Res> {
   _$AnswerCopyWithImpl(this._value, this._then);
 
-  final Answer _value;
   // ignore: unused_field
-  final $Res Function(Answer) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? type = freezed,
-    Object? TTL = freezed,
-    Object? data = freezed,
+    Object? name = null,
+    Object? type = null,
+    Object? TTL = null,
+    Object? data = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      TTL: TTL == freezed
+      TTL: null == TTL
           ? _value.TTL
           : TTL // ignore: cast_nullable_to_non_nullable
               as int,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AnswerCopyWith<$Res> implements $AnswerCopyWith<$Res> {
-  factory _$AnswerCopyWith(_Answer value, $Res Function(_Answer) then) =
-      __$AnswerCopyWithImpl<$Res>;
+abstract class _$$_AnswerCopyWith<$Res> implements $AnswerCopyWith<$Res> {
+  factory _$$_AnswerCopyWith(_$_Answer value, $Res Function(_$_Answer) then) =
+      __$$_AnswerCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, int type, int TTL, String data});
 }
 
 /// @nodoc
-class __$AnswerCopyWithImpl<$Res> extends _$AnswerCopyWithImpl<$Res>
-    implements _$AnswerCopyWith<$Res> {
-  __$AnswerCopyWithImpl(_Answer _value, $Res Function(_Answer) _then)
-      : super(_value, (v) => _then(v as _Answer));
+class __$$_AnswerCopyWithImpl<$Res>
+    extends _$AnswerCopyWithImpl<$Res, _$_Answer>
+    implements _$$_AnswerCopyWith<$Res> {
+  __$$_AnswerCopyWithImpl(_$_Answer _value, $Res Function(_$_Answer) _then)
+      : super(_value, _then);
 
-  @override
-  _Answer get _value => super._value as _Answer;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? type = freezed,
-    Object? TTL = freezed,
-    Object? data = freezed,
+    Object? name = null,
+    Object? type = null,
+    Object? TTL = null,
+    Object? data = null,
   }) {
-    return _then(_Answer(
-      name == freezed
+    return _then(_$_Answer(
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      type == freezed
+      null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      TTL == freezed
+      null == TTL
           ? _value.TTL
           : TTL // ignore: cast_nullable_to_non_nullable
               as int,
-      data == freezed
+      null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as String,
@@ -662,29 +620,34 @@ class _$_Answer implements _Answer {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Answer &&
+            other is _$_Answer &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.TTL, TTL) || other.TTL == TTL) &&
             (identical(other.data, data) || other.data == data));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, type, TTL, data);
 
   @JsonKey(ignore: true)
   @override
-  _$AnswerCopyWith<_Answer> get copyWith =>
-      __$AnswerCopyWithImpl<_Answer>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_AnswerCopyWith<_$_Answer> get copyWith =>
+      __$$_AnswerCopyWithImpl<_$_Answer>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AnswerToJson(this);
+    return _$$_AnswerToJson(
+      this,
+    );
   }
 }
 
 abstract class _Answer implements Answer {
-  const factory _Answer(String name, int type, int TTL, String data) =
+  const factory _Answer(
+          final String name, final int type, final int TTL, final String data) =
       _$_Answer;
 
   factory _Answer.fromJson(Map<String, dynamic> json) = _$_Answer.fromJson;
@@ -699,5 +662,6 @@ abstract class _Answer implements Answer {
   String get data;
   @override
   @JsonKey(ignore: true)
-  _$AnswerCopyWith<_Answer> get copyWith => throw _privateConstructorUsedError;
+  _$$_AnswerCopyWith<_$_Answer> get copyWith =>
+      throw _privateConstructorUsedError;
 }
